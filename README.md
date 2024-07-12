@@ -1,3 +1,16 @@
+# Introduction
+
+**Protocol Name:** Centrifuge  
+**Category:** RWA Tokenization  
+**Smart Contract:** Tinlake
+
+## Function Analysis
+
+**Function Name:** drop  
+**Block Explorer Link:** [Etherscan - Tinlake](https://etherscan.io/address/0x9C281Db786f1cA18c84bC4f378fB01f3e08bEECf#code)  
+**Function Code:**
+
+```solidity
 function drop(address asset) external {
     require(msg.sender == coordinator, "not-coordinator");
     require(assets[asset].asset != address(0), "asset-not-found");
